@@ -1,0 +1,16 @@
+.container{
+    width:100vw;
+    height:100vh;
+    display: flexbox;
+}
+.output{
+    margin-top: 10px;
+    align-items: center;
+    height:100vh;
+}
+.active{
+    color:rgb(18, 134, 206);
+}
+.inactive{
+    color:#000000;
+}
