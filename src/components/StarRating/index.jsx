@@ -15,7 +15,7 @@ function handleMouseOver(getIndex)
     setRating(getIndex);
 }
 
-return <div><h1>Star Rating</h1>
+return <div><h1>Project 3 : Star Rating</h1>
 {
 [...Array(noStars)].map((_,index)=>{
     index +=1

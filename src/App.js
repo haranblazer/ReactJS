@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import ImageSlider from './components/ImageSlider';
 //import Accordion from './components/Accordion';
 //import RandomColor from './components/RandomColor';
 import StarRating from './components/StarRating';
@@ -9,7 +10,9 @@ function App() {
     <div className="App">
       {/* <Accordion/> */}
       {/* <RandomColor/> */}
-      <StarRating noStars={10}/>
+      {/* <StarRating noStars={10}/> */}
+      <ImageSlider url={'https://picsum.photos/v2/list'} page={"1"} limit={"10"}/>
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
