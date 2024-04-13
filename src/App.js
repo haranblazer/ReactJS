@@ -1,9 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
-import ImageSlider from './components/ImageSlider';
+//import ImageSlider from './components/ImageSlider';
+import LoadMoreItems from './components/LoadMoreItems/LoadMoreItems';
 //import Accordion from './components/Accordion';
 //import RandomColor from './components/RandomColor';
-import StarRating from './components/StarRating';
+//import StarRating from './components/StarRating';
 
 function App() {
   return (
@@ -11,22 +12,11 @@ function App() {
       {/* <Accordion/> */}
       {/* <RandomColor/> */}
       {/* <StarRating noStars={10}/> */}
-      <ImageSlider url={'https://picsum.photos/v2/list'} page={"1"} limit={"10"}/>
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={"1"} limit={"10"}/> */}
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <LoadMoreItems/>
+
+  
     </div>
   );
 }
