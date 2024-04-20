@@ -1,0 +1,56 @@
+export  const menus = [
+    {
+        label:"Home",
+        to: "/",
+        level:0
+    },
+    {
+        label:"Profile",
+        to:"/profile",
+        level:0,
+        children:[
+            {
+                label:"Details",
+                to:"cetails",
+                level:1,
+                children:[
+                    {
+                        label:"Profile",
+                        to:"profile",
+                        level:2,
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        label:"Settings",
+        to:"settings",
+        level:0,
+        children:[
+            {
+                label:"Account",
+                to:"account",
+                level:1,
+            },
+            {
+                label:"Security",
+                to:"security",
+                level:1,
+                children: [
+                    {
+                        label:"Login",
+                        to:"login",
+                        level:2
+                    },
+                    {
+                        label:"Register",
+                        to:"register",
+                        level:2
+                    }
+                ]
+            }
+        ]
+    }
+];
+export default menus;
