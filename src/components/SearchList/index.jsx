@@ -39,13 +39,13 @@ let handleManageTerm = (e) => {
     
 
 
-    return (<><h1>SearchList</h1><label htmlFor="search">Search :</label>
+    return (<><h1>SearchList</h1><label htmlFor="search">Search : </label>
     <input type="text" name="search" value={searchTerm} onChange={handleSearch} placeholder="Enter name to search"/>
     <p>
     <div style={{display:"inline-grid"}}>
   
     <ul>{filteredNames.map((name, index) => (<li key={index}>{name}</li>) )}</ul></div></p>
-    <label htmlFor="manageTerm">Mange Term</label>
+    <label htmlFor="manageTerm">Mange Term : </label>
     <input type="text" name="manageTerm" value={manageTerm} onChange={handleManageTerm} placeholder="Enter the name"/>
     <button onClick={buttonClick}>Add</button>
     </>);
