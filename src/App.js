@@ -4,7 +4,8 @@ import './App.css';
 //import ImageSlider from './components/ImageSlider';
 //import LoadMoreItems from './components/LoadMoreItems/LoadMoreItems';
 //import TreeViewNaviationMenu from './components/TreeViewNavigationMenu';
-import QRCodeGenerator from './components/QRCodeGenerator';
+//mport QRCodeGenerator from './components/QRCodeGenerator';
+import LightDarkMode from './components/LightDarkMode';
 //import Accordion from './components/Accordion';
 //import RandomColor from './components/RandomColor';
 //import StarRating from './components/StarRating';
@@ -20,7 +21,8 @@ function App() {
       {/* <LoadMoreItems/> */}
       {/* <TreeViewNaviationMenu/> */}
       {/* <SearchList/> */}
-      <QRCodeGenerator/>
+      {/* <QRCodeGenerator/> */}
+      <LightDarkMode/>
 
 
   
