@@ -5,7 +5,8 @@ import './App.css';
 //import LoadMoreItems from './components/LoadMoreItems/LoadMoreItems';
 //import TreeViewNaviationMenu from './components/TreeViewNavigationMenu';
 //mport QRCodeGenerator from './components/QRCodeGenerator';
-import LightDarkMode from './components/LightDarkMode';
+//import LightDarkMode from './components/LightDarkMode';
+import ProgressBarIndicator from './components/ProgressBarIndicator';
 //import Accordion from './components/Accordion';
 //import RandomColor from './components/RandomColor';
 //import StarRating from './components/StarRating';
@@ -22,7 +23,10 @@ function App() {
       {/* <TreeViewNaviationMenu/> */}
       {/* <SearchList/> */}
       {/* <QRCodeGenerator/> */}
-      <LightDarkMode/>
+      {/* <LightDarkMode/> */}
+      <Suspense fallback={<div>Loading....</div>}>
+      <ProgressBarIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      </Suspense>
 
 
   
