@@ -21,13 +21,12 @@ export default function LoadMoreItems() {
   }
 
   useEffect(() => {
-      fetchProducts();
+    fetchProducts();
   }, [Count]);
   return (
     <>
       <h1>Project 5 : Load More Items</h1>
       <div class="container">
-                
         <div class="product-container">
           {Products.map((item) => (
             <div key={item.id} className="product-item">
@@ -38,10 +37,14 @@ export default function LoadMoreItems() {
           ))}
         </div>
         <div className="button-container">
-        Total Items : {Products.length}
-          <button disabled={disableBtn} onClick={() => {Products.length >= 100 && setDisableBtn(true); setCount((prevCount) => prevCount + 1)}
-        
-        }>
+          Total Items : {Products.length}
+          <button
+            disabled={disableBtn}
+            onClick={() => {
+              Products.length >= 100 && setDisableBtn(true);
+              setCount((prevCount) => prevCount + 1);
+            }}
+          >
             Load More Items ...
           </button>
           {disableBtn && <>You have reached maxmium limit of 100 </>}
